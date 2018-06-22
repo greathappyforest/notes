@@ -1,0 +1,115 @@
+1640  sudo apt-get install qemu-utils
+ 1641  \t\nmodprobe m nbd
+ 1642  \n1\nmodprobe nbd
+ 1643  \n\nmodprobe nbd
+ 1644  modprobe ndb
+ 1645  modprobe nbd
+ 1646  ls /dev/nbd*\n/dev/nbd0  /dev/nbd10  /dev/nbd12  /dev/nbd14  /dev/nbd2  /dev/nbd4  /dev/nbd6  /dev/nbd8\n/dev/nbd1  /dev/nbd11  /dev/nbd13  /dev/nbd15  /dev/nbd3  /dev/nbd5  /dev/nbd7  /dev/nbd9
+ 1647  qemu-nbd -c dev/nbd2 ~/Documents/zhuxian/Red\ Hat\ Enterprise\ Linux\ 4.vmdk
+ 1648  sudo qemu-nbd -c dev/nbd2 ~/Documents/zhuxian/Red\ Hat\ Enterprise\ Linux\ 4.vmdk
+ 1649  partx -l /dev/nbd2
+ 1650  sudo partx -l /dev/nbd2
+ 1651  ls
+ 1652  cd ..
+ 1653  ls
+ 1654  partx -l /mnt/zhuxian
+ 1655  partx -l /mnt/mount1
+ 1656  mount /dev/nbd0p1 /mnt/mount1
+ 1657  sudo mount /dev/nbd0p1 /mnt/mount1
+ 1658  sudo mount /dev/nbd2p1 /mnt/mount1
+ 1659  ls
+ 1660  cd /mnt/mount1
+ 1661  ls
+ 1662  sudo mount /dev/nbd2p1 /mnt/zhuxian
+ 1663  cd ..
+ 1664  ls
+ 1665  cd zhuxian 
+ 1666  ls
+ 1667  sudo mount /dev/nbd2p2 /mnt/zhuxian
+ 1668  sudo unmount /dev/nbd2p1 /mnt/zhuxian
+ 1669  unmount /mnt/zhuxian
+ 1670  umount /mnt/zhuxian
+ 1671  sudo umount /mnt/zhuxian
+ 1672  sudo umount /dev/nbd2p1 /mnt/zhuxian
+ 1673  sudo umount -f /dev/nbd2p1 /mnt/zhuxian
+ 1674  fuser /mnt/zhuxian
+ 1675  sudo umount -f /dev/nbd2p1 /mnt/zhuxian
+ 1676  sudo mount /dev/nbd2p2 /mnt/zhuxian
+ 1677  fdisk -l
+ 1678  sudo fdisk -l
+ 1679  cd /dev/nbd2p2
+ 1680  cd /dev/
+ 1681  ls
+ 1682  cd nbd2p2
+ 1683  cd nbd2
+ 1684  cd ..
+ 1685  ls
+ 1686  cd /mnt/zhuxian/ls
+ 1687  cd /mnt/zhuxian/
+ 1688  ls
+ 1689  lvmdiskscan
+ 1690  cd ..
+ 1691  ls
+ 1692  cd mount1
+ 1693  ls
+ 1694  sudo mount /dev/nbd2p1 /mnt/mount1
+ 1695  ls
+ 1696  sudo mount /dev/nbd2p1 /mnt/mount1
+ 1697  ls
+ 1698  cd ..
+ 1699  ls
+ 1700  cd mount1
+ 1701  ls
+ 1702  cd ..
+ 1703  ls
+ 1704  tar -czvf ./test.tar.gz ./mount1
+ 1705  sudo tar -czvf ./test.tar.gz ./mount1
+ 1706  ls
+ 1707  ls -ll test.tar.gz
+ 1708  mv test.tar.gz /home/adam/Desktop
+ 1709  sudo mv test.tar.gz /home/adam/Desktop
+ 1710  sudo mount /dev/nbd2p2 /mnt/zhuxian
+ 1711  pvs
+ 1712  sudo apt install lvm2
+ 1713  pvs
+ 1714  pvs /dev/nbd2
+ 1715  sudo pvs /dev/nbd2
+ 1716  sudo pvs 
+ 1717  vgs
+ 1718  sudo vgs
+ 1719  lvdisplay
+ 1720  sudo lvdisplay
+ 1721  sudo pvs 
+ 1722  clear
+ 1723  sudo pvs 
+ 1724  sudo vgs
+ 1725  sudo lvdisplay
+ 1726  sudo vgchange -ay /dev/VolGroup00
+ 1727  sudo lvdisplay
+ 1728  sudo mount /dev/nbd2p2 /mnt/zhuxian
+ 1729  sudo mount /dev/VolGroup00 /mnt/zhuxian
+ 1730  sudo mount /dev/VolGroup00/LogVol00 /mnt/zhuxian
+ 1731* ls
+ 1732* cd zhuxian
+ 1733* ls
+ 1734* cd ..
+ 1735* ls
+ 1736* mkdir zhuxian1
+ 1737* sudo mkdir zhuxian1
+ 1738  sudo mount /dev/VolGroup00/LogVol01 /mnt/zhuxian1
+ 1739  swap
+ 1740  sudo tar -czvf ~/Desktop/zhuxian3.tar.gz /mnt/zhuxian
+ 1741  sudo tar -cvf ~/Desktop/zhuxian3.tar /mnt/zhuxian
+
+
+
+
+
+
+
+http://www.cnblogs.com/52linux/archive/2012/03/04/2379738.html
+
+https://www.evernote.com/shard/s514/nl/141255801/96f54dc5-d176-4d21-a9b2-71f84bf5015f
+
+https://www.evernote.com/Home.action?login=true#n=6fb03c60-6d1a-4da9-851f-38e841c4a28c&s=s514&ses=4&sh=2&sds=5&
+
